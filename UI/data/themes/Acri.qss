@@ -512,6 +512,10 @@ QToolButton:pressed {
     qproperty-icon: url(theme:Dark/settings/general.svg);
 }
 
+* [themeID="cutIconSmall"] {
+	qproperty-icon: url(./Dark/cut.svg);
+}
+
 * [themeID="menuIconSmall"] {
     qproperty-icon: url(theme:Dark/dots-vert.svg);
 }

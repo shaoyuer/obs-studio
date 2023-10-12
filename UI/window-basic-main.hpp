@@ -324,6 +324,8 @@ private:
 	QPointer<QPushButton> transitionButton;
 	QPointer<ControlsSplitButton> replayBufferButton;
 	QScopedPointer<QPushButton> pause;
+	QScopedPointer<QPushButton> splitFile;
+	QScopedPointer<QPushButton> replay;
 
 	QPointer<ControlsSplitButton> vcamButton;
 	bool vcamEnabled = false;
@@ -1191,6 +1193,7 @@ private slots:
 	void on_multiviewProjectorWindowed_triggered();
 	void on_sideDocks_toggled(bool side);
 
+	void RecordingSplitFile();
 	void PauseToggled();
 
 	void logUploadFinished(const QString &text, const QString &error);
