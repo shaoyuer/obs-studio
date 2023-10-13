@@ -1,26 +1,26 @@
 {
     "dependencies": {
         "prebuilt": {
-            "version": "2023-10-09",
+            "version": "2023-10-13",
             "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
             "label": "Pre-Built obs-deps",
             "hashes": {
-                "macos-universal": "4b7651e5a19b4ffa2371725e9d7865b5bc4eae46fd7ca0d4b9fabdf7491332b0",
-                "windows-x64": "7585ba9cc470c1f668af6d51efe6da211b16822b884382817750d9e8b502a81c",
-                "windows-x86": "2dd109ff1674dcc59592a234eb5263272432bde63989cc2a41cd8edbd2117e55",
-                "linux-x86_64": "856a51a53981b1bd3f5e5b9670a0924f70473353e669fce52e64d5d730209564"
+                "macos-universal": "010e5070d59b60d407f51d2dd00d16cbe47a75da91f6b9cab046d1689df112ff",
+                "windows-x64": "45132924f66cc918151c1209c98406f5862827526fc14d76a05eb53de7c756cc",
+                "windows-x86": "f592530c7a9bd21ead5d06d0801f1f64787491c1820efd31a28464ffdefb0535",
+                "linux-x86_64": "6ee8413bf361ac71eb985f57aa8dc4d58ae55e032b00952cfb54b8231e240be6"
             }
         },
         "qt6": {
-            "version": "2023-10-09",
+            "version": "2023-10-13",
             "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
             "label": "Pre-Built Qt6",
             "hashes": {
-                "macos-universal": "8d2fe5a7ddb0c5d5b2d37e43fde50661eb497e2b219e65f3822233e8a7f33e5a",
-                "windows-x64": "feadb745e622fb81aa1cdcdc1179baef4c4442d15cb8f0212cb7ceda0f1911df"
+                "macos-universal": "f99f13a2e76395fef620f2e9fa9bdae7047658e4842e53062878c7233b49c812",
+                "windows-x64": "f50c214cdcda395c48bb58d064782e99d53a30558d84cf50e59e5be2e53b3d18"
             },
             "debugSymbols": {
-                "windows-x64": "3c43ae5293051958bc024af3083b3a60c4c4fac2629f88446dbc671d22d9f997"
+                "windows-x64": "cf0c866d027f6bede36f2f4ad8309a2f763e84eaa08180d6e11428b0b772dd23"
             }
         },
         "cef": {
