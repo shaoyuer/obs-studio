@@ -3018,6 +3018,13 @@ bool obs_obj_is_private(void *obj)
 	return context->private;
 }
 
+static bool update_audio_monitor_dup_refs(void *data, obs_source_t *source)
+{
+	UNUSED_PARAMETER(data);
+	update_audio_output_dup_refs(source);
+	return true;
+}
+
 bool obs_set_audio_monitoring_device(const char *name, const char *id)
 {
 	if (!name || !id || !*name || !*id)
@@ -3045,6 +3052,8 @@ bool obs_set_audio_monitoring_device(const char *name, const char *id)
 	}
 
 	pthread_mutex_unlock(&obs->audio.monitoring_mutex);
+
+	obs_enum_sources(update_audio_monitor_dup_refs, NULL);
 	return true;
 }
 
